@@ -135,6 +135,19 @@
 || 
 || 5 persons listed!
 || ===================================================
+|| Enter command: || [Command entered:  add Angeline Neoh p/666666 e/angeline@nus.edu.sg a/475D, Upper Serangoon Crescent, #07-571, 537475]
+|| New person added: Angeline Neoh Phone: 666666 Email: angeline@nus.edu.sg Address: 475D, Upper Serangoon Crescent, #07-571, 537475 Tags: 
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+|| 	6. Angeline Neoh Phone: 666666 Email: angeline@nus.edu.sg Address: 475D, Upper Serangoon Crescent, #07-571, 537475 Tags: 
+|| 
+|| 6 persons listed!
+|| ===================================================
 || Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy]
 || This person already exists in the address book
 || ===================================================
@@ -163,7 +176,7 @@
 || The person index provided is invalid
 || ===================================================
 || Enter command: || [Command entered:  view 6]
-|| The person index provided is invalid
+|| Viewing person: Angeline Neoh Phone: 666666 Email: angeline@nus.edu.sg Address: 475D, Upper Serangoon Crescent, #07-571, 537475 Tags: 
 || ===================================================
 || Enter command: || [Command entered:  viewall -1]
 || The person index provided is invalid
@@ -172,7 +185,7 @@
 || The person index provided is invalid
 || ===================================================
 || Enter command: || [Command entered:  viewall 6]
-|| The person index provided is invalid
+|| Viewing person: Angeline Neoh Phone: 666666 Email: angeline@nus.edu.sg Address: 475D, Upper Serangoon Crescent, #07-571, 537475 Tags: 
 || ===================================================
 || Enter command: || [Command entered:  view 1]
 || Viewing person: Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
@@ -268,8 +281,9 @@
 || 	2. Betsy Choo Tags: [secretive]
 || 	3. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
 || 	4. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+|| 	5. Angeline Neoh Phone: 666666 Email: angeline@nus.edu.sg Address: 475D, Upper Serangoon Crescent, #07-571, 537475 Tags: 
 || 
-|| 4 persons listed!
+|| 5 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  delete 4]
 || Deleted Person: Esther Potato Phone: 555555 Email: esther@not.a.real.potato Address: (private) 555, epsilon street Tags: [tubers][starchy]
@@ -278,8 +292,9 @@
 || 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
 || 	2. Betsy Choo Tags: [secretive]
 || 	3. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	4. Angeline Neoh Phone: 666666 Email: angeline@nus.edu.sg Address: 475D, Upper Serangoon Crescent, #07-571, 537475 Tags: 
 || 
-|| 3 persons listed!
+|| 4 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  delete 1]
 || Deleted Person: Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
@@ -287,8 +302,9 @@
 || Enter command: || [Command entered:  list]
 || 	1. Betsy Choo Tags: [secretive]
 || 	2. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	3. Angeline Neoh Phone: 666666 Email: angeline@nus.edu.sg Address: 475D, Upper Serangoon Crescent, #07-571, 537475 Tags: 
 || 
-|| 2 persons listed!
+|| 3 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  clear]
 || Address book has been cleared!

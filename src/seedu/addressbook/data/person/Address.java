@@ -14,6 +14,12 @@ public class Address {
 
     public final String value;
     private boolean isPrivate;
+    
+    private String[] addressArray;
+    private Block block;
+    private Street street;
+    private Unit unit;
+    private PostalCode postalCode;
 
     /**
      * Validates given address.
@@ -25,7 +31,18 @@ public class Address {
         if (!isValidAddress(address)) {
             throw new IllegalValueException(MESSAGE_ADDRESS_CONSTRAINTS);
         }
+        
         this.value = address;
+        
+        
+        addressArray = address.split(",");
+        block = new Block(addressArray[0].substring(2, addressArray[0].length()));
+        if(addressArray.length > 2)
+        	street = new Street(addressArray[1].trim());
+        if(addressArray.length > 3)
+        	unit = new Unit(addressArray[2].trim());
+        if(addressArray.length > 4)
+        	postalCode = new PostalCode(addressArray[3].trim());      
     }
 
     /**
