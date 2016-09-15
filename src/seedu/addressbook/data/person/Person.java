@@ -14,24 +14,29 @@ public class Person implements ReadOnlyPerson {
     private Phone phone;
     private Email email;
     private Address address;
+    
+    private int sequenceNumber;
+    private static int nextSequenceNumber;
 
     private final UniqueTagList tags;
     /**
      * Assumption: Every field must be present and not null.
      */
-    public Person(Name name, Phone phone, Email email, Address address, UniqueTagList tags) {
+    public Person(Name name, Phone phone, Email email, Address address, UniqueTagList tags, int sequenceNumber, int nextSequenceNumber) {
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
         this.tags = new UniqueTagList(tags); // protect internal tags from changes in the arg list
+        this.sequenceNumber = sequenceNumber;
+        this.nextSequenceNumber = nextSequenceNumber;
     }
 
     /**
      * Copy constructor.
      */
     public Person(ReadOnlyPerson source) {
-        this(source.getName(), source.getPhone(), source.getEmail(), source.getAddress(), source.getTags());
+        this(source.getName(), source.getPhone(), source.getEmail(), source.getAddress(), source.getTags(), source.getSequenceNumber(), source.getNextSequenceNumber());
     }
 
     @Override
@@ -59,6 +64,13 @@ public class Person implements ReadOnlyPerson {
         return new UniqueTagList(tags);
     }
 
+    public int getSequenceNumber() {
+    	return sequenceNumber;
+    }
+    
+    public int getNextSequenceNumber() {
+    	return nextSequenceNumber;
+    }
     /**
      * Replaces this person's tags with the tags in the argument tag list.
      */

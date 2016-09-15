@@ -25,6 +25,9 @@ public class AddCommand extends Command {
     public static final String MESSAGE_DUPLICATE_PERSON = "This person already exists in the address book";
 
     private final Person toAdd;
+    
+    private int sequenceNumber = 0;
+    private static int nextSequenceNumber = 1;
 
     /**
      * Convenience constructor using raw values.
@@ -45,8 +48,12 @@ public class AddCommand extends Command {
                 new Phone(phone, isPhonePrivate),
                 new Email(email, isEmailPrivate),
                 new Address(address, isAddressPrivate),
-                new UniqueTagList(tagSet)
+                new UniqueTagList(tagSet),
+                sequenceNumber,
+                nextSequenceNumber
         );
+        sequenceNumber++;
+        nextSequenceNumber++;
     }
 
     public AddCommand(Person toAdd) {

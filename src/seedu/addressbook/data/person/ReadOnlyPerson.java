@@ -13,6 +13,9 @@ public interface ReadOnlyPerson {
     Phone getPhone();
     Email getEmail();
     Address getAddress();
+    
+    int getSequenceNumber();
+    int getNextSequenceNumber();
 
     /**
      * The returned TagList is a deep copy of the internal TagList,
